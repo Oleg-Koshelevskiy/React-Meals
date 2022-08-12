@@ -75,7 +75,7 @@ const Cart = (props) => {
 
   const cartModalContent = (
     <React.Fragment>
-      {cartItems}
+      {!isCheckout && cartItems}
       <div className={classes.total}>
         <span>Total Amount</span>
         <span>{totalAmount}</span>
