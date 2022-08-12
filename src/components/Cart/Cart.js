@@ -37,6 +37,7 @@ const Cart = (props) => {
         body: JSON.stringify({
           user: userData,
           orderedItems: cartCtx.items,
+          date: new Date(),
         }),
       }
     );
